@@ -1,0 +1,33 @@
+
+.study-div {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: right;
+}
+
+.uid-div {
+    font-size: medium;
+    margin: 8px;
+    color: rgb(77, 77, 77);
+}
+
+.link-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 120px;
+    outline: none;
+    margin: 10px;
+    border: solid 2px transparent;
+    border-radius: 2px;
+    background-color: rgb(203, 220, 238);
+    cursor: pointer;
+}
+
+.link-div:hover {
+    border: solid 2px rgb(71, 104, 136);
+    border-radius: 4px;
+  }
+  
