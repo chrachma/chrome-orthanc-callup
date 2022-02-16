@@ -5,7 +5,12 @@ function onFoundStudies(result) {
         for (b of buttons.childNodes) {
             b.remove()
         }
-        if (result) {
+        if (!orthancExternalCallupUrl) {
+            console.log("No URL in Orthanc Study Callup extension settings set.");
+            [el] = document.getElementsByClassName("no-url-hint");
+            el.setAttribute("style", "display: block;")
+        }
+        if (orthancExternalCallupUrl && result) {
             let uniqueUids = [...new Set(result[0]['result'])];
             for (uid of uniqueUids) {
                 let url = orthancExternalCallupUrl.replace('{StudyInstanceUID}', uid);
@@ -21,6 +26,7 @@ function onFoundStudies(result) {
                 uid_div.append(showText);
                 
                 link_div.append('OPEN STUDY');
+                link_div.setAttribute("title", url);
                 link_div.addEventListener('click', async () => {
                     window.open(url)
                 });

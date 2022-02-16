@@ -7,7 +7,7 @@
 }
 
 .uid-div {
-    font-size: medium;
+    font-size: small;
     margin: 8px;
     color: rgb(77, 77, 77);
 }
@@ -29,5 +29,11 @@
 .link-div:hover {
     border: solid 2px rgb(71, 104, 136);
     border-radius: 4px;
-  }
+}
   
+.no-url-hint {
+    width: 84px;
+    margin: 8px;
+    border: solid 1px gray;
+    padding: 10px;
+}
