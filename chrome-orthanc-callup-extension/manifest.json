@@ -1,7 +1,7 @@
 {
     "name": "Orthanc Study Callup",
-    "description": "Opens a new tab with DICOM Study Instance UID in a customizable URL, e.g. for callup in an external viewer",
-    "version": "0.1",
+    "description": "When activated in Orthanc, it opens a new tab with DICOM Study Instance UID in a customizable URL, e.g. for callup in an external viewer",
+    "version": "0.2",
     "manifest_version": 3,
     "options_page": "options.html",
     "permissions": ["storage", "activeTab", "scripting", "tabs"],

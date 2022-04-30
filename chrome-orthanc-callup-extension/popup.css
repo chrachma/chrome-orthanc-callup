@@ -10,6 +10,7 @@
     font-size: small;
     margin: 8px;
     color: rgb(77, 77, 77);
+    white-space: nowrap;
 }
 
 .link-div {
@@ -36,4 +37,10 @@
     margin: 8px;
     border: solid 1px gray;
     padding: 10px;
+}
+
+.clinical-use {
+    text-align: center;
+    border: #ff450066 1px solid;
+    color: #ff450070;
 }
