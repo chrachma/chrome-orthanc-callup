@@ -81,7 +81,7 @@ function onFoundStudies(params) {
         
         let result = params[0]['result']
 
-        // workaroudn to get url: is appended as last element
+        // workaround to get url: is appended as last element
         let u = new URL(result.pop())
 
         let f = emptyPromise;
